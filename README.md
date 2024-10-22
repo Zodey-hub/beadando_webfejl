@@ -109,3 +109,8 @@
   - **Stilizált térkép**: Alul egy fantáziatérkép található, ami a vállalkozás helyét jelzi. Ez nem egy hagyományos Google Maps-stílusú térkép, hanem inkább olyan, mintha papiruszon készült volna. A térképen egy piramis ikon jelzi a cég „székhelyét”, mellette a kapcsolati információk (pl. cím, telefonszám).
 
   - **Térkép dekoráció**: A térkép körül apró díszítőelemek találhatók, például ókori szimbólumok vagy hieroglifák, amik még autentikusabbá teszik a megjelenést.
+
+
+# Látványkép:
+![](./assets/latvanykep.webp)
+
