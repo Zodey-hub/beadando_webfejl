@@ -1,7 +1,4 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+* {
   margin: 0;
   padding: 0;
 }
@@ -12,24 +9,33 @@ body {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 1vw;
   font-weight: 700;
 }
 
 .navbar a {
   color: #f8f1d4;
   text-decoration: none;
-  padding: 10px;
+  padding: 1vw;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #e8d1b2;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 50px;
+  padding: 1vw;
   background: transparent;
   color: #f8f1d4;
   font-weight: bolder;
+}
+
+hr {
+  border: 1px solid #b4935f;
 }
 
 .banner-container {
@@ -49,6 +55,7 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #f8f1d4;
+  width: 30%;
 }
 
 .banner-content p {
@@ -56,45 +63,59 @@ body {
 }
 
 .banner h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+  font-size: 3em;
+  margin-bottom: 0.5em;
 }
 
 .banner p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.cta-button {
-  background-color: #d4a017;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
+  font-size: 1.2em;
+  margin-bottom: 5%;
 }
 
 .content {
-  padding: 50px;
+  padding: 2%;
 }
 
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
+  gap: 2%;
 }
 
 .card {
   background-color: #e0c18c;
   border: 2px solid #b4935f;
   border-radius: 10px;
-  padding: 20px;
-  width: 200px;
+  padding: 1%;
+  width: calc(100vw / 7);
   text-align: center;
+  transition: transform 0.2s;
 }
 
-.card h2 {
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card div {
+  margin-bottom: 2%;
+  height: 22%;
+}
+
+.card div h2 {
   font-size: 24px;
-  margin-bottom: 10px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card div p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
