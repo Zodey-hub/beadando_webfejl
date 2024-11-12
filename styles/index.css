@@ -1,121 +1,62 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Cinzel", serif;
-  background-color: #cdac77;
-}
-
-.logo {
-  font-size: 1vw;
-  font-weight: 700;
-}
-
-.navbar a {
-  color: #f8f1d4;
-  text-decoration: none;
-  padding: 1vw;
-  transition: color 0.3s;
-}
-
-.navbar a:hover {
-  color: #e8d1b2;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1vw;
-  background: transparent;
-  color: #f8f1d4;
-  font-weight: bolder;
+.banner-container {
+  background: url("../assets/banner.webp") center 20% / cover no-repeat;
 }
 
 hr {
   border: 1px solid #b4935f;
 }
 
-.banner-container {
-  background: url("../assets/banner.webp") center 20% / cover no-repeat;
-}
-
-.banner {
-  width: 100%;
-  height: 60vh;
-  position: relative;
-}
-
-.banner-content {
-  position: absolute;
-  top: 40%;
-  left: 15%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #f8f1d4;
-  width: 30%;
-}
-
-.banner-content p {
-  font-weight: bolder;
-}
-
-.banner h1 {
-  font-size: 3em;
-  margin-bottom: 0.5em;
-}
-
-.banner p {
-  font-size: 1.2em;
-  margin-bottom: 5%;
-}
-
 .content {
-  padding: 2%;
+  text-align: center;
+  padding: 3em 0;
+  background-color: #b4935f;
 }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2%;
+.content h2 {
+  font-size: 2.5em;
+  color: #b4935f;
+  margin-bottom: 1.5em;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .card {
-  background-color: #e0c18c;
-  border: 2px solid #b4935f;
-  border-radius: 10px;
-  padding: 1%;
-  width: calc(100vw / 7);
-  text-align: center;
-  transition: transform 0.2s;
+  position: relative;
+  overflow: hidden;
+  background-color: #b4935f;
+  padding: 1em;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card h3 {
+  font-size: 1.5em;
+  color: #b4935f;
+  margin-top: 0.8em;
+}
+
+.card p {
+  font-size: 1em;
+  color: #6e5d42;
+  margin-top: 0.5em;
 }
 
 .card:hover {
   transform: scale(1.05);
 }
 
-.card div {
-  margin-bottom: 2%;
-  height: 22%;
-}
-
-.card div h2 {
-  font-size: 24px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-}
-
-.card div p {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+.card:hover img {
+  transform: scale(1.1);
 }

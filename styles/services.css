@@ -1,0 +1,63 @@
+hr {
+    border: 1px solid #f8f1d4;
+}
+
+.banner-container {
+  background: url("../assets/header_szolgaltotasok.webp") center 20% / cover
+    no-repeat;
+}
+
+.services-section {
+  text-align: center;
+  padding: 3em 0;
+  background-color: #f8f1d4;
+}
+
+.services-section h2 {
+  font-size: 2.5em;
+  color: #b4935f;
+  margin-bottom: 1.5em;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-item {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.service-item img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.service-item h3 {
+  font-size: 1.5em;
+  color: #b4935f;
+  margin-top: 0.8em;
+}
+
+.service-item p {
+  font-size: 1em;
+  color: #6e5d42;
+  margin-top: 0.5em;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+}
+
+.service-item:hover img {
+  transform: scale(1.1);
+}

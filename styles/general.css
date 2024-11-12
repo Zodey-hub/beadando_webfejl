@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Cinzel", serif;
+  background-color: #cdac77;
+}
+
+.logo {
+  font-size: 1vw;
+  font-weight: 700;
+}
+
+.navbar a {
+  color: #f8f1d4;
+  text-decoration: none;
+  padding: 1vw;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #e8d1b2;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw;
+  background: transparent;
+  color: #f8f1d4;
+  font-weight: bolder;
+}
+
+.banner {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+}
+
+.banner-content {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #f8f1d4;
+  width: 30%;
+}
+
+.banner-content p {
+  font-weight: bolder;
+}
+
+.banner h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.banner p {
+  font-size: 1.2em;
+  margin-bottom: 5%;
+}
