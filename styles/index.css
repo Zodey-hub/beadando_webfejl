@@ -8,55 +8,47 @@ hr {
 
 .content {
   text-align: center;
-  padding: 3em 0;
+  padding: 2%;
   background-color: #b4935f;
 }
 
-.content h2 {
-  font-size: 2.5em;
-  color: #b4935f;
-  margin-bottom: 1.5em;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2em;
-  max-width: 1200px;
-  margin: 0 auto;
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
 }
 
 .card {
+  background-color: #e0c18c;
+  border-radius: 10px;
+  padding: 1%;
+  width: calc(100vw / 7);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card div {
+  margin-bottom: 2%;
+  height: 22%;
+}
+
+.card div h2 {
   position: relative;
-  overflow: hidden;
-  background-color: #b4935f;
-  padding: 1em;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .card img {
   width: 100%;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+  border-radius: 5%;
 }
 
-.card h3 {
-  font-size: 1.5em;
-  color: #b4935f;
-  margin-top: 0.8em;
-}
-
-.card p {
-  font-size: 1em;
-  color: #6e5d42;
-  margin-top: 0.5em;
+.card div p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .card:hover {
   transform: scale(1.05);
-}
-
-.card:hover img {
-  transform: scale(1.1);
 }

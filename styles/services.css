@@ -1,5 +1,5 @@
 hr {
-    border: 1px solid #f8f1d4;
+  border: 1px solid #f8f1d4;
 }
 
 .banner-container {
@@ -19,45 +19,51 @@ hr {
   margin-bottom: 1.5em;
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.services-list {
+  display: flex;
+  flex-direction: column;
   gap: 2em;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .service-item {
-  position: relative;
-  overflow: hidden;
-  background-color: #fff;
-  padding: 1em;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.service-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.service-item:nth-child(even) > div {
+  text-align: right;
 }
 
 .service-item img {
-  width: 100%;
-  border-radius: 8px;
+  width: 40%;
+  border-radius: 5%;
   transition: transform 0.3s ease;
 }
 
-.service-item h3 {
-  font-size: 1.5em;
-  color: #b4935f;
-  margin-top: 0.8em;
+.service-text {
+  width: 50%;
+  text-align: left;
 }
 
-.service-item p {
+.service-text h3 {
+  font-size: 1.8em;
+  color: #b4935f;
+  margin-bottom: 0.5em;
+}
+
+.service-text p {
   font-size: 1em;
   color: #6e5d42;
   margin-top: 0.5em;
 }
 
-.service-item:hover {
-  transform: scale(1.05);
-}
-
 .service-item:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
