@@ -112,5 +112,5 @@
 
 
 # Látványkép:
-![](./assets/latvanykep.webp)
+![](./assets/landscape.webp)
 

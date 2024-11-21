@@ -3,11 +3,11 @@ hr {
 }
 
 .banner-container {
-  background: url("../assets/header_szolgaltotasok.webp") center 20% / cover
-    no-repeat;
+  background: url("../assets/services/banner.webp") center 20% / cover no-repeat;
 }
 
 .services-section {
+  width: auto;
   text-align: center;
   padding: 3em 0;
   background-color: #f8f1d4;
@@ -23,11 +23,11 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
 .service-item {
+  width: auto;
   display: flex;
   align-items: center;
   gap: 1.5em;
@@ -37,18 +37,19 @@ hr {
   flex-direction: row-reverse;
 }
 
-.service-item:nth-child(even) > div {
+.service-item:nth-child(even)>div {
   text-align: right;
 }
 
 .service-item img {
   width: 40%;
+  height: auto;
   border-radius: 5%;
   transition: transform 0.3s ease;
 }
 
 .service-text {
-  width: 50%;
+  width: auto;
   text-align: left;
 }
 

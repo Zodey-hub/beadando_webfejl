@@ -1,0 +1,83 @@
+.banner-container {
+    background: url("../assets/prices/banner.webp") center 20% / cover no-repeat;
+}
+
+hr {
+    border: 1px solid #f3e5cd;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.price-table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+.price-table caption {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.price-table th,
+.price-table td {
+    padding: 1rem;
+    border: 1px solid #b4935f;
+    text-align: center;
+}
+
+.price-table th {
+    background-color: #f4e1c1;
+}
+
+.price-table tbody tr:nth-child(odd) {
+    background-color: #f8f1d4;
+}
+
+.price-table tbody tr:nth-child(even) {
+    background-color: #e8d1b2;
+}
+
+.highlighted-prices {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #e0c18c;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.highlight-box {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 2px solid #b4935f;
+    border-radius: 5px;
+    background-color: #f8f1d4;
+}
+
+.highlight-box h3 {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .logo {
+        display: none;
+    }
+}
