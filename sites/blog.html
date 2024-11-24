@@ -28,6 +28,66 @@
         <hr>
         <div class="banner"></div>
     </div>
+
+    <main class="projects-section">
+        <div class="project-container">
+            <div class="project-box">
+                <h3>Nagy Holdfény Piramis</h3>
+                <img src="../assets/index/pyramid_1.webp" alt="Nagy Naplemente Piramis" class="project-image"
+                    onclick="openModal(this)">
+                <p>Helyszín: Giza<br>Év: 2022<br>Különleges éjszakai kilátás</p>
+            </div>
+            <div class="project-box">
+                <h3>Arany Homok Dűne Piramis</h3>
+                <img src="../assets/index/pyramid_2.webp" alt="Arany Homok Piramis" class="project-image"
+                    onclick="openModal(this)">
+                <p>Helyszín: Luxor<br>Év: 2021<br>Homokfényű arany burkolat</p>
+            </div>
+            <div class="project-box">
+                <h3>Vörös Alkony Piramisa</h3>
+                <img src="../assets/index/pyramid_3.webp" alt="Vörös Alkony Piramisa" class="project-image"
+                    onclick="openModal(this)">
+                <p>Helyszín: Szakkara<br>Év: 2019<br>Vörösen tündöklő naplemente
+                </p>
+            </div>
+            <div class="project-box">
+                <h3>Narancs Fények Piramisa</h3>
+                <img src="../assets/index/pyramid_4.webp" alt="Narancs Fények Piramisa" class="project-image"
+                    onclick="openModal(this)">
+                <p>Helyszín: Abu Simbel<br>Év: 2018<br>Mesés narancs színek</p>
+            </div>
+            <div class="project-box">
+                <h3>Napfényes Harmónia Piramisai</h3>
+                <img src="../assets/index/pyramid_5.webp" alt="Napfényes Harmónia Piramisai" class="project-image"
+                    onclick="openModal(this)">
+                <p>Helyszín: Aswan<br>Év: 2017<br>Ragyogó déli napfény aura</p>
+            </div>
+        </div>
+    </main>
+
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        function openModal(element) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const caption = document.getElementById('caption');
+
+            modal.style.display = "block";
+            modalImg.src = element.src;
+            caption.innerHTML = element.alt;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
