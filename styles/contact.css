@@ -1,0 +1,79 @@
+.banner-container {
+    background: url("../assets/contact/banner.webp") center 20% / cover no-repeat;
+}
+
+hr {
+    border: 1px solid #f3e5cd;
+}
+
+.banner {
+    width: auto;
+    height: 60vh;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-form {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    color: #f8f1d4;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.contact-form h2 {
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e8d1b2;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.submit-button {
+    background-color: #e8c547;
+    color: black;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #d4a33a;
+}
+
+.map-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.map-container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.map-container img {
+    max-width: 100%;
+    border-radius: 5px;
+}

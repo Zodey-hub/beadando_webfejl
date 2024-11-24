@@ -21,13 +21,33 @@
                 <a href="services.html">Szolgáltatások</a>
                 <a href="prices.html">Árak</a>
                 <a href="contact.html">Kapcsolat</a>
-                <a href="ratings.html">Vélemények</a>
+                <a href="reviews.html">Vélemények</a>
                 <a href="blog.html">Blogok / Projektek</a>
             </nav>
         </header>
         <hr>
         <div class="banner"></div>
     </div>
+
+    <main class="contact-section">
+        <form class="contact-form">
+            <h2>Kapcsolat</h2>
+            <label for="name">Név:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-mail cím:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Üzenet:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit" class="submit-button">Küldés</button>
+        </form>
+
+        <div class="map-section">
+            <h2>Irodánk helye</h2>
+            <div class="map-container">
+                <img src="../assets/contact/pyramid_map.webp" alt="Irodánk helye">
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

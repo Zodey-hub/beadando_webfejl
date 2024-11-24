@@ -1,0 +1,7 @@
+.banner-container {
+    background: url("../assets/blog/banner.webp") center 20% / cover no-repeat;
+}
+
+hr {
+    border: 1px solid #f3e5cd;
+}

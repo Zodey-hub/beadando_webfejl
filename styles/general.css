@@ -68,7 +68,7 @@ body {
   margin-bottom: 5%;
 }
 
-/* Mobil nézet */
+/* Mobile view */
 @media (max-width: 390px) {
   .navbar {
     flex-direction: column;
@@ -84,7 +84,7 @@ body {
   }
 }
 
-/* Tablet nézet */
+/* Tablet view */
 @media (max-width: 820px) {
   .navbar {
     flex-direction: column;
@@ -97,9 +97,5 @@ body {
 
   .logo {
     display: none;
-  }
-
-  .banner-content {
-    position: relative;
   }
 }

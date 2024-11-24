@@ -7,10 +7,12 @@ hr {
 }
 
 .services-section {
-  width: auto;
+  width: 100%;
   text-align: center;
   padding: 3em 0;
   background-color: #f8f1d4;
+  overflow-wrap: break-word;
+  overflow-x: auto;
 }
 
 .services-section h2 {
@@ -67,4 +69,11 @@ hr {
 
 .service-item:hover img {
   transform: scale(1.05);
+}
+
+/* Mobil nézet */
+@media (max-width: 390px) {
+  .service-text h3 {
+    font-size: 1em;
+  }
 }
